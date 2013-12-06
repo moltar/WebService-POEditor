@@ -28,7 +28,7 @@ use namespace::clean;
 
 =head2 api_token
 
-Set API token L<https://poeditor.com/account/api|obtained from POEditor.com>.
+Set API token L<obtained from POEditor.com|https://poeditor.com/account/api>.
 
 Alternatively, API token can be set via environment variable C<POEDITOR_API_TOKEN>.
 
