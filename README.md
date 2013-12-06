@@ -8,17 +8,19 @@ version v1.0.0
 
 # SYNOPSIS
 
-    use WebService::POEditor;
+```perl
+use WebService::POEditor;
 
-    my $poeditor = WebService::POEditor->new(api_token => 'XYZ');
+my $poeditor = WebService::POEditor->new(api_token => 'XYZ');
 
-    ## get a list of projects
-    my $res = $poeditor->list_projects;
-    my @projects = $res->list;
+## get a list of projects
+my $res = $poeditor->list_projects;
+my @projects = $res->list;
 
-    ## create a project
-    my $res = $poeditor->create_project({ name => 'Project X' });
-    print $res->message if $res->code == 200; ## Project created.
+## create a project
+my $res = $poeditor->create_project({ name => 'Project X' });
+print $res->message if $res->code == 200; ## Project created.
+```
 
 # ATTRIBUTES
 
